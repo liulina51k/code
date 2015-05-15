@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>会员注册-战略网</title>
+<link href="basic.v1.4.css" rel="stylesheet" type="text/css" />
+<link href="user.css" rel="stylesheet" type="text/css" />
+<script src="../jquery.js" type="text/javascript" charset="UTF-8"></script>
+<script src="formValidator_min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="formValidatorRegex.js" type="text/javascript" charset="UTF-8"></script>
+<script language="javascript" src="DateTimeMask.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.formValidator.initConfig({autotip:true,onerror:function(msg){alert(msg)}});
+    <!--2012-07-18修改文字-->
+    $("#username").formValidator({onshow:" ",onfocus:"请输入4-15个字符",oncorrect:"<img src='"+siteurl+"/images/member/dg.jpg' width='15' height='13'  class='dg'/>"}).inputValidator({min:4,max:15,onerror:"用户名格式不正确，请更换"}).regexValidator({regexp:"username",datatype:"enum",onerror:"用户名格式不正确，请更换"})
+    <!--2012-07-18修改文字结束-->
+        .ajaxValidator({
+        type : "get",
+        url : siteurl+"/do.php?inajax=1&do=user&ac=verifyname&parameter=verify",
+        datatype : "json",
+        success : function(data){    
+            if( data == "1" )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        },
+        buttons: $("#button"),
+        error: function(){alert("服务器没有返回数据，可能服务器忙，请重试");},
+        onerror : "该用户名已被占用，请更换",
+        onwait : "正在进行合法性校验，请稍候..."
+    });
+    $("#password").formValidator({onshow:" ",onfocus:"密码不能为空",oncorrect:"<img src='"+siteurl+"/images/member/dg.jpg' width='15' height='13'  class='dg'/>"}).inputValidator({min:1,onerror:"密码不能为空,请确认"});
+    $("#password2").formValidator({onshow:" ",onfocus:"两次密码必须一致哦",oncorrect:"<img src='"+siteurl+"/images/member/dg.jpg' width='15' height='13'  class='dg'/>"}).inputValidator({min:1,onerror:"重复密码不能为空,请确认"}).compareValidator({desid:"password",operateor:"=",onerror:"2次密码不一致,请确认"});
+    $("#email").formValidator({onshow:" ",onfocus:"邮箱长度为6-100个字符",oncorrect:"<img src='"+siteurl+"/images/member/dg.jpg' width='15' height='13'  class='dg'/>",defaultvalue:""}).inputValidator({min:6,max:100,onerror:"邮箱长度非法,请确认"}).regexValidator({regexp:"^([\\w-.]+)@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.)|(([\\w-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(]?)$",onerror:"邮箱格式不正确,请重新填写"}).ajaxValidator({
+        type : "get",
+        url : siteurl+"/do.php?inajax=1&do=user&ac=verifyemail&parameter=verify",
+        datatype : "json",
+        success : function(data){    
+            if( data == "1" )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        },
+        buttons: $("#button"),
+        error: function(){alert("服务器没有返回数据，可能服务器忙，请重试");},
+        onerror : "此邮箱已注册",
+        onwait : "正在进行合法性校验，请稍候..."
+    });
+        $("#verifycode").formValidator({onshow:""}).inputValidator({min:1,onerror:"请输入验证码"}).regexValidator({regexp:"notempty",datatype:"enum",onerror:"验证码错误"})
+        .ajaxValidator({
+        type : "get",
+        url : siteurl+"/do.php?inajax=1&do=verify&ac=verify",
+        datatype : "json",
+        success : function(data){    
+            if( data == "1" )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        },
+        buttons: $("#button"),
+        error: function(){alert("服务器没有返回数据，可能服务器忙，请重试");},
+        onerror : "验证码错误",
+        onwait : "正在进行合法性校验，请稍候..."
+    });
+});
+
+  //登录验证 
+   $("#name").blur( function () {       
+       if($('#name').val()==''){$('#nametest').html("请输入用户名"); }
+       else {    $('#nametest').html("");   }
+    }); 
+
+   $("#word").blur( function () {       
+       if($('#word').val()=='')$('#wordtest').html("密码不能为空"); 
+           else $('#wordtest').html(""); 
+    });
+
+</script>
+<body>
+<div class="wrap">
+   <div class="end">
+    <div class="five"></div>
+     <div class="zc_email">
+     <form action="{$site}/user/reg.html" method="post" onsubmit="return $.formValidator.pageIsValid('1')">
+     <table border="0" width="568">
+     
+     <input name="formhash" value="{$formhash}" type="hidden">
+  <tbody><tr>
+    <td class="bt" height="48" width="72">邮箱：</td>
+    <td colspan="10"><input name="member[email]" id="email" class="yx" type="text"></td>
+   <td width="232"></td>
+  </tr>
+  <tr>
+    <td class="bt3" height="48">用户名：</td>
+    <td colspan="10">
+        <input name="member[username]" id="username" class="yx" type="text">
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+      <td></td>
+    <td colspan="11" align="left"><div class="rules">中文、英文、数字的组合，限20个字符；注册后不可更改</div></td>
+  </tr>
+  <tr>
+    <td class="bt" height="48">密码：</td>
+    <td colspan="10"><input name="member[password]" id="password" class="yx" type="password"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="bt4" height="48">确认密码：</td>
+    <td colspan="10"><input name="password2" id="password2" class="yx" type="password"></td>
+   <td></td>
+  </tr>
+  
+  <tr>
+    <td class="bt3" height="41">验证码：</td> 
+    <td colspan="12"><input name="verifycode" id="verifycode" class="verify" type="text"><img src="{$site}/do.php?do=verify" alt="看不清？换一张" onclick="$(this).attr('src','{$site}/do.php?do=verify&amp;r='+rand());"><div class="look_no" onclick="$(this).prev() .attr('src','{$site}/do.php?do=verify&amp;r='+rand());">看不清？换一张</div></td> 
+  </tr>
+  <tr>
+    <td colspan="11" height="38">
+        <input name="checkbox" value="checkbox" checked="checked" id="checkbox" type="checkbox">
+      <p>我同意《<a href="{$site}/user/pact.html" class="blueonline" target="_blank">战略网用户协议</a>》</p>
+  </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="11" height="39"><label>
+      <input id="button" value=" " name="imageField" type="submit">
+    </label></td>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+<input name="regsubmit" value="true" type="hidden">
+<input type="hidden" name="recomid" value="{$recommendid}">
+<input type="hidden" name="preurl" value="{$preurl}">
+</form>
+     
+     </div>
+     </div>
+</div>
+</body></html>
