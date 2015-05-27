@@ -139,7 +139,7 @@ var by = function(name) {
     };
 }
 //关于sort更深一层，本人了解的也不是很多，有兴趣的自己去了解。
-//******************array.splice(start,deleteCount,item...) 函数的使用，******************
+//******************9.array.splice(start,deleteCount,item...) 函数的使用，******************
 //该方法从array中移除一个或多个元素，并用新的item替换它们，start起始位置，deleteCount删除
 //个数，item后面的所有参数，被插入到被删除元素的位置。它返回一个包含被删除元素的数组。
 //splice 最主要的用处是 从一个数组中删除元素。
@@ -149,7 +149,7 @@ function splice1() {
 	console.log(a);//a 是 [ 'a', 'ache', 'bug','c']
 	console.log(r);//r 是 ['b']
 }
-//******************array.unshift(item...) 函数的使用，******************
+//******************10.array.unshift(item...) 函数的使用，******************
 //该方法和push一样，用来把元素加入到数组中，但它是把item插入到数组的起始部分，而不是末尾
 //。它返回array的新的长度值。
 //unshift可以像这样实现

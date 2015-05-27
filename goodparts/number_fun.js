@@ -7,7 +7,7 @@ function toExponential1() {
 }
 //******************2.number.toFixed(fractionDigits) 函数的使用，******************
 //该方法把这个number转换成一个十进制数形式的字符串。可选参数fractionDigits控制其小数点后的
-//数字位数。它的值必须在0到20之间。默认为0：
+//数字位数。它的值必须在0到20之间。默认为0。
 function toFixed1() {
 	console.log(Math.PI.toFixed(0)); //3
 	console.log(Math.PI.toFixed(2)); //3.14
@@ -29,4 +29,4 @@ function toString1() {
 	console.log(Math.PI.toString(8)); //3.1103755242102643
 	console.log(Math.PI.toString(16)); //3.243f6a8885a3
 	console.log(Math.PI.toString()); //3.141592653589793
-}toExponential1();
+}
