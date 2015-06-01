@@ -1,0 +1,5 @@
+[01-Jun-2015 11:06:30 Asia/Shanghai] PHP Fatal error:  Call to undefined method Response::xmlEncode() in D:\chinaiiss\code\interface\json.php on line 59
+[01-Jun-2015 11:06:45 Asia/Shanghai] PHP Fatal error:  Class 'SELF' not found in D:\chinaiiss\code\interface\json.php on line 41
+[01-Jun-2015 11:07:03 Asia/Shanghai] PHP Fatal error:  Class 'SELF' not found in D:\chinaiiss\code\interface\json.php on line 41
+[01-Jun-2015 11:14:52 Asia/Shanghai] PHP Notice:  Undefined variable: data in D:\chinaiiss\code\interface\json.php on line 47
+[01-Jun-2015 11:14:52 Asia/Shanghai] PHP Warning:  Invalid argument supplied for foreach() in D:\chinaiiss\code\interface\json.php on line 47
