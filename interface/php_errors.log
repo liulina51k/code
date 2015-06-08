@@ -3,3 +3,4 @@
 [01-Jun-2015 11:07:03 Asia/Shanghai] PHP Fatal error:  Class 'SELF' not found in D:\chinaiiss\code\interface\json.php on line 41
 [01-Jun-2015 11:14:52 Asia/Shanghai] PHP Notice:  Undefined variable: data in D:\chinaiiss\code\interface\json.php on line 47
 [01-Jun-2015 11:14:52 Asia/Shanghai] PHP Warning:  Invalid argument supplied for foreach() in D:\chinaiiss\code\interface\json.php on line 47
+[08-Jun-2015 13:50:33 Asia/Shanghai] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in D:\chinaiiss\code\interface\list.php on line 24
