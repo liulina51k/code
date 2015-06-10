@@ -1,0 +1,22 @@
+[10-Jun-2015 17:18:34 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_ECHO in D:\chinaiiss\code\exceptions\test.php on line 3
+[10-Jun-2015 17:23:54 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 4
+[10-Jun-2015 17:23:54 Asia/Shanghai] PHP Fatal error:  Call to undefined function printr_r() in D:\chinaiiss\code\exceptions\test.php on line 5
+[10-Jun-2015 17:24:19 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 4
+[10-Jun-2015 17:24:43 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 4
+[10-Jun-2015 17:33:15 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 5
+[10-Jun-2015 17:33:15 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\test.php on line 13
+[10-Jun-2015 17:33:46 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 6
+[10-Jun-2015 17:33:46 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\test.php on line 14
+[10-Jun-2015 17:34:23 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 6
+[10-Jun-2015 17:34:23 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\test.php on line 14
+[10-Jun-2015 17:34:23 Asia/Shanghai] PHP Notice:  Use of undefined constant age - assumed 'age' in D:\chinaiiss\code\exceptions\test.php on line 19
+[10-Jun-2015 17:40:57 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 6
+[10-Jun-2015 17:40:57 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\test.php on line 14
+[10-Jun-2015 17:40:57 Asia/Shanghai] PHP Notice:  Use of undefined constant age - assumed 'age' in D:\chinaiiss\code\exceptions\test.php on line 19
+[10-Jun-2015 17:40:57 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test.php on line 24
+[10-Jun-2015 17:45:13 Asia/Shanghai] PHP Deprecated:  Function ereg() is deprecated in D:\chinaiiss\code\exceptions\test.php on line 6
+[10-Jun-2015 17:45:13 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\test.php on line 14
+[10-Jun-2015 17:45:13 Asia/Shanghai] PHP Notice:  Use of undefined constant age - assumed 'age' in D:\chinaiiss\code\exceptions\test.php on line 19
+[10-Jun-2015 17:45:13 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test.php on line 24
+[10-Jun-2015 17:45:13 Asia/Shanghai] PHP Fatal error:  Call to undefined function md6() in D:\chinaiiss\code\exceptions\test.php on line 28
+[10-Jun-2015 17:48:33 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in D:\chinaiiss\code\exceptions\test.php on line 30
