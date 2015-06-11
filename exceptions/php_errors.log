@@ -20,3 +20,52 @@
 [10-Jun-2015 17:45:13 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test.php on line 24
 [10-Jun-2015 17:45:13 Asia/Shanghai] PHP Fatal error:  Call to undefined function md6() in D:\chinaiiss\code\exceptions\test.php on line 28
 [10-Jun-2015 17:48:33 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in D:\chinaiiss\code\exceptions\test.php on line 30
+[11-Jun-2015 11:44:20 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test2.php on line 6
+[11-Jun-2015 11:44:20 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test2.php on line 8
+[11-Jun-2015 11:44:20 Asia/Shanghai] PHP Fatal error:  Call to undefined function imooc() in D:\chinaiiss\code\exceptions\test2.php on line 10
+[11-Jun-2015 11:44:55 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test2.php on line 8
+[11-Jun-2015 11:44:55 Asia/Shanghai] PHP Fatal error:  Call to undefined function imooc() in D:\chinaiiss\code\exceptions\test2.php on line 10
+[11-Jun-2015 11:45:39 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in D:\chinaiiss\code\exceptions\test2.php on line 10
+[11-Jun-2015 11:46:27 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test2.php on line 10
+[11-Jun-2015 11:46:27 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test2.php on line 12
+[11-Jun-2015 11:46:27 Asia/Shanghai] PHP Fatal error:  Call to undefined function imooc() in D:\chinaiiss\code\exceptions\test2.php on line 14
+[11-Jun-2015 11:49:35 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test2.php on line 15
+[11-Jun-2015 11:49:35 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test2.php on line 17
+[11-Jun-2015 11:49:35 Asia/Shanghai] PHP Fatal error:  Call to undefined function imooc() in D:\chinaiiss\code\exceptions\test2.php on line 19
+[11-Jun-2015 11:49:37 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test2.php on line 15
+[11-Jun-2015 11:49:37 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test2.php on line 17
+[11-Jun-2015 11:49:37 Asia/Shanghai] PHP Fatal error:  Call to undefined function imooc() in D:\chinaiiss\code\exceptions\test2.php on line 19
+[11-Jun-2015 11:49:44 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test2.php on line 15
+[11-Jun-2015 11:49:44 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test2.php on line 17
+[11-Jun-2015 11:49:44 Asia/Shanghai] PHP Fatal error:  Call to undefined function imooc() in D:\chinaiiss\code\exceptions\test2.php on line 19
+[11-Jun-2015 12:01:35 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test2.php on line 15
+[11-Jun-2015 12:01:35 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test2.php on line 17
+[11-Jun-2015 12:01:35 Asia/Shanghai] PHP Fatal error:  Call to undefined function imooc() in D:\chinaiiss\code\exceptions\test2.php on line 19
+[11-Jun-2015 12:01:41 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 10
+[11-Jun-2015 12:04:02 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:04:05 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:04:06 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:04:06 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:04:06 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:04:20 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:04:33 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:04:46 Asia/Shanghai] PHP Notice:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 11
+[11-Jun-2015 12:05:45 Asia/Shanghai] PHP Warning:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 12
+[11-Jun-2015 12:06:26 Asia/Shanghai] PHP Fatal error:  num1和num2必须为合法数值 in D:\chinaiiss\code\exceptions\test3.php on line 13
+[11-Jun-2015 13:38:52 Asia/Shanghai] PHP Notice:  Use of undefined constant off - assumed 'off' in D:\chinaiiss\code\exceptions\test4.php on line 2
+[11-Jun-2015 13:39:05 Asia/Shanghai] PHP Notice:  Use of undefined constant OFF - assumed 'OFF' in D:\chinaiiss\code\exceptions\test4.php on line 2
+[11-Jun-2015 16:31:28 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
+[11-Jun-2015 16:31:50 Asia/Shanghai] PHP Notice:  Use of undefined constant customError - assumed 'customError' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
+[11-Jun-2015 16:31:50 Asia/Shanghai] PHP Notice:  Use of undefined constant PHP_EOF - assumed 'PHP_EOF' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 5
+[11-Jun-2015 16:31:50 Asia/Shanghai] PHP Notice:  Use of undefined constant PHP_EOF - assumed 'PHP_EOF' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 6
+[11-Jun-2015 16:31:50 Asia/Shanghai] PHP Notice:  Use of undefined constant PHP_EOF - assumed 'PHP_EOF' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 7
+[11-Jun-2015 16:32:20 Asia/Shanghai] PHP Notice:  Use of undefined constant customError - assumed 'customError' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
+[11-Jun-2015 16:33:34 Asia/Shanghai] PHP Notice:  Use of undefined constant customError - assumed 'customError' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
+[11-Jun-2015 16:33:34 Asia/Shanghai] PHP Fatal error:  Call to undefined function test() in D:\chinaiiss\code\exceptions\set_error_handler.php on line 15
+[11-Jun-2015 16:35:26 Asia/Shanghai] PHP Notice:  Use of undefined constant customError - assumed 'customError' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
+[11-Jun-2015 16:36:11 Asia/Shanghai] PHP Notice:  Use of undefined constant customError - assumed 'customError' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
+[11-Jun-2015 16:36:11 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\set_error_handler.php on line 19
+[11-Jun-2015 16:37:54 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_ECHO in D:\chinaiiss\code\exceptions\set_error_handler.php on line 23
+[11-Jun-2015 16:38:09 Asia/Shanghai] PHP Notice:  Use of undefined constant customError - assumed 'customError' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
+[11-Jun-2015 16:38:09 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\set_error_handler.php on line 20
+[11-Jun-2015 16:38:09 Asia/Shanghai] PHP Notice:  Undefined variable: imooc in D:\chinaiiss\code\exceptions\set_error_handler.php on line 23

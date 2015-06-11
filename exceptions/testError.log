@@ -1,0 +1,11 @@
+[11-Jun-2015 13:38:52 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test4.php on line 5
+[11-Jun-2015 13:38:52 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test4.php on line 7
+[11-Jun-2015 13:38:52 Asia/Shanghai] PHP Fatal error:  Call to undefined function test() in D:\chinaiiss\code\exceptions\test4.php on line 9
+[11-Jun-2015 13:39:05 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test4.php on line 5
+[11-Jun-2015 13:39:05 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test4.php on line 7
+[11-Jun-2015 13:39:05 Asia/Shanghai] PHP Fatal error:  Call to undefined function test() in D:\chinaiiss\code\exceptions\test4.php on line 9
+[11-Jun-2015 13:39:13 Asia/Shanghai] PHP Notice:  Undefined variable: test in D:\chinaiiss\code\exceptions\test4.php on line 5
+[11-Jun-2015 13:39:13 Asia/Shanghai] PHP Warning:  settype() [<a href='function.settype'>function.settype</a>]: Invalid type in D:\chinaiiss\code\exceptions\test4.php on line 7
+[11-Jun-2015 13:39:13 Asia/Shanghai] PHP Fatal error:  Call to undefined function test() in D:\chinaiiss\code\exceptions\test4.php on line 9
+[11-Jun-2015 14:24:23 PRC] 用户：queen在2015-06-11 14:24:23以密码：123尝试登陆系统!IP地址为127.0.0.1
+[11-Jun-2015 14:25:01 PRC] 用户：quenn在2015-06-11 14:25:01以密码：123尝试登陆系统!IP地址为127.0.0.1
