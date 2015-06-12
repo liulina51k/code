@@ -1,0 +1,440 @@
+body{
+	margin:0 auto;
+	font-size:10px;
+    overflow:hidden;
+   	overflow-y: hidden; 
+    clear:both;
+    background-color: #454545;
+}
+
+#page-1{
+	padding-top: 30px;
+	height: 1000px;
+	background-image:url("share_bg_iphonesix.jpg");
+    background-position: center;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    /*overflow-y: hidden; */
+}
+
+.panel-relative{
+	position:relative;
+	top:0px;
+}
+
+.main-panel-wrap{
+	margin:0 auto;
+	width:310px;
+	overflow:hidden;
+	background-color:#FFFFFF;
+	 
+	border:none;
+	border-radius:1em;
+	box-shadow:0.4em 0.4em 0.4em #888888;
+	position:relative;
+	top:80px;
+}
+.help-title-wrap{
+	display:inline-block; 
+	margin-top:30px;
+	margin-left:38px;
+    font-weight:600;
+	font-size:2.4em;
+	color:#8EC21F;
+}
+.topic-wrap{
+	margin-left:27px;
+	margin-right:26px;
+	margin-top:-18px;
+	font-size:1em;
+	font-weight:600;
+	color:#636367;
+}
+/*选择图片区*/
+.picture-wrap{
+	
+	margin:0 auto;
+	width:255px;
+	height:180px;
+	margin-top:8px;
+	positon:relative;
+	overflow:hidden;
+	}
+	
+.picture{
+	width:255px;
+	height:158px;
+	float:left;
+	
+}
+.main-panel-wrap img{
+	width:100%;
+	height:100%;
+}
+.picture-topic-one,.picture-topic-two{
+	margin:0 auto;
+	width:127.5px;
+	height:28px;
+    float:left;
+	background-color:rgba(20,171,228,0.8);
+	margin-top:-28px;
+	font-size:1.2em;
+    font-weight:bold; 
+    color:#FFFFFF;
+    text-align:center;
+    line-height:28px;
+	overflow:hidden; 
+}
+.picture-topic-two{
+	 
+    float:right;
+    background-color:rgba(225,197,23,0.8);
+	 
+}
+ 
+.picture-or{
+	line-height:40px;
+	overflow:hidden; 
+	width:40px;
+	height:40px;
+	background-color:rgba(64,64,72,0.8);
+    position:absolute;
+	bottom:130px;
+	left:50%;
+	margin-left: -20px;
+	border-radius:50%;
+	font-size:2.1em;
+	font-weight:550;
+    text-align:center;
+    color:#FFFFFF;
+}
+.choose-button-one,.choose-button-two{
+	
+	width:60px;
+	height:30px;
+    float:left;
+    margin-left:63px;
+	margin-top:10px;
+	margin-bottom:10px;
+	background-color:#8EC21F;
+	border-radius:2em 2em;
+	font-size:1.5em;
+	font-weight:600;
+    text-align:center;
+    color:#FFFFFF;
+    line-height:30px;
+	overflow:hidden; 
+}
+
+.voted-note{
+	width: 250px;
+	margin: 0 auto;
+	padding:8px 30px;
+	color: #636367;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.head-picture{
+	width:140px;
+	height:110px;
+	position:absolute;
+	top:0px;
+	left:50%;
+	margin-left: -55px;
+	 
+}
+.head-picture img{
+	width:100%;
+	height:100%;
+}
+
+
+/*info页布局*/
+.main-panel-info-wrap{
+	margin:0 auto;
+	width:310px;
+	background-color:#FFFFFF;
+	border:none;
+	border-radius:1em;
+	box-shadow:0.4em 0.4em 0.4em #888888;
+	overfloat:hidden;
+	padding-bottom:20px;
+}
+.main-panel-info-wrap img{
+	width:100%;
+	height:100%;
+}
+.info-cancel,.xingzuo-info-cancel{
+	width:14px;
+	height:14px;
+	float:right;
+	margin-top:15px;
+	margin-right:20px;
+	}
+.info-title{
+	  
+	padding-top:20px;
+	margin-left:110px;
+	margin-right:50px;
+	margin-top: 0px;
+	font-size:1.5em;
+	color:#8EC21F;
+	 
+}
+.info-choose-item{
+	margin-top:-15px;
+	text-align:center;
+	font-size:2em;
+	color:#8EC21F;
+}
+.info-ask{
+	 
+	margin-top:8px;
+    margin-left:24px;
+	font-size:1.4em;
+	color:#636367;
+     
+}
+.info-line-img{
+	width:280px;
+	height:2px;
+	margin-top:5px;
+	margin-left:15px
+}
+.info-sex{
+	margin-left:20px;
+	margin-top:20px;
+	font-size:1.6em;
+	color:#8EC21F;
+}
+.info-man-img,.info-woman-img{
+	width:90px;
+	height:95px;
+	float:left;
+	margin-top:8px;
+	margin-left:40px
+	}
+.info-age{
+	display:inline-block; 
+	margin-left:20px;
+    margin-top:16px;
+    font-size:2em;
+	color:#8EC21F;
+	}
+.info-age-div1{
+	width:310px;
+	height:55px;
+     
+	margin-top:8px;
+ 
+}
+
+.info-age70{
+	width:55px;
+	height:40px;
+    float:left;
+    margin-left:65px;
+}
+.info-age90{
+	width:65px;
+	height:50px;
+    float:left;
+    margin-left:45px;
+    
+}
+.info-age-div2{
+	width:310px;
+	height:45px;
+   
+ 
+ 
+}
+.info-age60,.info-age80,.info-age00{
+	width:55px;
+	height:40px;
+    float:left;  
+    margin-left:20px;
+    margin-top:-5px;
+}
+.info-age80{
+	margin-left:35px;
+    margin-top:5px;
+}
+
+.info-age00{
+	margin-left:65px;
+    margin-top:-8px;
+}
+.info-button-next{
+	width:250px;
+	height:40px;
+    margin-left:30px;
+    margin-top:15px;
+    
+    background-color:#8EC21F;
+	border-radius:2em 2em;
+	font-size:2.1em;
+	font-weight:600;
+    text-align:center;
+    color:#FFFFFF;
+    line-height:40px;
+	overflow:hidden; 
+}
+
+/*
+*
+*星座主页面*
+*
+*/
+.main-panel-xingzuo-wrap{
+	margin:0 auto;
+	width:310px;
+	height:420px;
+	background-color:#FFFFFF;
+	border:none;
+	border-radius:1em;
+	box-shadow:0.4em 0.4em 0.4em #888888;
+	overflow:hidden;
+}
+.main-panel-xingzuo-wrap img{
+	width:100%;
+	height:100%;
+}
+.xingzuo-choose-p{
+    display:block;
+	margin-top:30px;
+    margin-left:20px;
+	font-size:2em;
+	color:#8EC21F;
+	 
+}
+.xingzuo-choose-name{
+ 
+	float:left;
+	width:100px;
+    height:25px;
+	border:2px #8EC21F solid;
+	border-radius:2em 2em;
+	margin-top:10px;
+    margin-left:20px;
+	text-align:center;
+	padding-top:3px;
+	font-size:2em;
+	color:#3B3B42;
+}
+.xingzuo-panel{ 
+	float:right;
+	width:240px;
+    height:240px;
+	 
+    margin-top:-10px;
+	margin-right:-120px;
+	}
+.xingzuo-arrow{
+	float:right;
+    width:80px;
+    height:30px;
+    margin-top:95px;
+    margin-right:-15px;
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+}
+.xingzuo-message{
+   display:inline-block;
+	width:200px;
+	
+    margin-left:24px;
+	font-size:2em;
+	color:#8EC21F;
+}
+.xingzuo-input{
+   width:240px;
+   height:39px;
+   background-color:#E7E7E7;
+   padding-left:1em;
+   font-size:1.6em;
+   color:#B0B0B0;
+   border:0px;
+   border-radius:2em;
+   margin-top:10px;
+   margin-left:24px;
+   outline:none;
+}
+.xingzuo-button-submit{
+	width:200px;
+    height:40px;
+    margin-top:10px;
+    margin-left:50px;
+    background-color:#8EC21F;
+	border-radius:2em 2em;
+	font-size:2.1em;
+	font-weight:600;
+    text-align:center;
+    color:#FFFFFF;
+    line-height:40px;
+	overflow:hidden; }
+    
+    
+    
+    
+    
+/*
+*
+**
+底部布局
+**
+*
+*/
+#bottom-wrap{
+	 
+	height:60px;
+	background-color:#E2E2E2;
+	position:relative;
+	bottom:0px;
+}
+/*机器人图片*/
+.robot-img-wrap{
+    width:45px;
+	height:45px;
+	float:left;
+	 
+	margin-left:10px;
+	margin-top:8px;
+}
+.pictrue-text-wrap{
+	 width:175px;
+	height:45px;
+	float:left;
+	 
+	margin-left:10px;
+	margin-top:8px;
+}
+/*甭纠结图片*/
+.pictrue-wrap{
+    width:98px;
+	height:20px;
+	float:left;
+	 
+	 
+}
+/*文字区*/
+.text-wrap{
+     
+	float:left;
+	font-size:0.6em;
+	overflow:hidden;
+	color:#8F8F8F;
+	 
+	margin-top:3px; 
+}
+/*下载图片*/
+.download-wrap{
+    width:70px;
+	height:35px;
+	float:right;
+	 
+	margin-right:10px;
+	margin-top:10px;
+}

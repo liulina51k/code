@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>甭纠结，帮你做决定！</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <meta http-equiv="keywords" content="甭纠结">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src = "static/js/json2.js"></script>
+    <script type="text/javascript" src = "static/js/selfdefined.js"></script>
+    <script type="text/javascript" src = "static/js/mobile-tabs.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="static/css/home.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div id="page-1">
+      <div class="panel-relative" id ="panel-relative" style="display:block;"> 
+        <div class="main-panel-wrap">
+          <p class="help-title-wrap">快来帮帮你的朋友吧</p>
+          <div class="topic-wrap" id="topic1"></div>
+          <div class="picture-wrap">
+             <div class="picture"><img src="static/img/create_pic_bg.png" id="first-picture"/></div>
+             <div class="picture-topic-one" id = "picture-topic-one"></div>
+             <div class="picture-topic-two" id= "picture-topic-two"></div>
+             <div class="picture-or">OR</div>
+          </div>
+          <div class="choose-button-one" id = "choose-button-one">投票</div>
+          <div class="choose-button-two" id = "choose-button-two">投票</div>
+          <div class="voted-note" style="display:none;" id="voted-note">您已投票<br/>向上滑动可以查看投票结果哦</div>
+        </div>
+        <div class="head-picture">
+          <img src="./static/img/share_portraitthank_man.png"/>
+        </div>
+      </div>
+     
+      <!-- 性别和年龄选择页 -->
+      <div class="main-panel-info-wrap" id = "main-panel-info-wrap" style="display:none;">
+            <div class="info-cancel"><img id = "info-cancel-img" src="./static/img/universal_cancel.png"/></div>
+            <p class="info-title">你的选择是</p>
+            <p class="info-choose-item">“<span id="choice" style="word-spacing:20px;"></span>”</p>
+            <div class="info-ask">甭纠结正在帮TA统计数据，请问你是？</div>
+            <div class="info-line-img"><img src="./static/img/share_img_line.png"/></div>
+            <div class="info-sex">请选择你的性别：</div>
+            <div class="info-man-img"><img id = "info-man-img" src="./static/img/share_btn_portrait_male.png"/></div>
+            <div class="info-woman-img"><img id = "info-woman-img" src="./static/img/share_btn_portrait_female.png"/></div>
+            <div class="info-age">请选择你的年龄：</div>
+            <div class="info-age-div1">
+              <div class="info-age70"><img id = "info-age-70-img" src="./static/img/share_btn_seven.png"/></div>
+              <div class="info-age90"><img id = "info-age-90-img" src="./static/img/share_btn_nine.png"/></div>
+            </div>
+  		  <div class="info-age-div2">
+  		        <div class="info-age60"><img id = "info-age-60-img" src="./static/img/share_btn_six.png"/></div>
+               <div class="info-age80"><img id = "info-age-80-img" src="./static/img/share_btn_eight.png"/></div>
+               <div class="info-age00"><img id = "info-age-00-img" src="./static/img/share_btn_zero.png"/></div>
+  		  </div>
+  		  <div class="info-button-next" id = "info-button-next">下一步</div>
+      </div>
+
+      <!-- 星座转盘选择页 -->
+     <div class="main-panel-xingzuo-wrap" id = "main-panel-xingzuo-wrap" style="display:none;">
+            <div class="xingzuo-info-cancel"><img id =  "xingzuo-info-cancel-img" src="./static/img/universal_cancel.png"/></div>
+            <div class="xingzuo-choose-p">请选择你的星座：</div>
+            <div class="xingzuo-choose-name" id="xingzuo">双鱼座</div>
+            <div class="xingzuo-panel"><img id="zhuanpan" style="transform:rotate(-15deg);-webkit-transform:rotate(-15deg);" src="./static/img/zhuanpan.png"/></div>
+            <div class="xingzuo-arrow"><img src="./static/img/share_arrow.png"/></div>
+            <div class="xingzuo-message">捎句话，跟TA说：</div>
+            <input class="xingzuo-input" id = "xingzuo-input" type="text" maxlength="60" placeholder="输入点什么呗(60字以内)"/>
+  		  <div class="xingzuo-button-submit" id = "xingzuo-button-submit">提交</div>
+      </div>
+    </div>
+    <div id="page-2" style="display:none;">
+      <div class="data-page-wrap">
+        <div class = "data-view-panel">
+          <div id = "tab-1" class = "tab-content current-tab">
+              <div class="content-wrap">
+                <div class = "option-header">
+                  <div class = "option-one-wrap  ellipsis-text">
+                    <p><i class="fa fa-circle option-indent-icon option-one-indent-icon"></i><span class="option-one-text-field"></span></p>
+                  </div>
+
+                  <div class = "option-two-wrap  ellipsis-text">
+                    <p><i class="fa fa-circle option-indent-icon option-two-indent-icon"></i><span class="option-two-text-field"></span></p>
+                  </div>
+                </div>
+
+                <div class="conclusion-wrap-fa">
+                  <dl class = "conclusion-wrap">
+                      <dt id = "conclusion-title-sum">
+                      <p><span id="conclusion-title-span">纠结星球民意显示</span><i class="fa fa-caret-down conclusion-title-icon conclusion-title-icon-animation"></i></p>
+                      </dt>
+                      <dd id = "conclusion-detail-sum" class = "conclusion-detail-before-animation">
+                        <p id="summary-detail-sum"></p>
+                      </dd>
+                  </dl>
+                </div>
+
+                <div class = "sum-data-wrap">
+
+                  <div id="inner-circle" class = "inner-circle-animation"></div>
+                  <img id="inner-plane" src="static/img/data_icon_rocket.png"/ height="80">
+                  <div id="sum-data-note-text">投票总人数</div>
+                  <div id="sum-data-note-value"></div>
+                  <svg id="sum-data-canvas" width="320" height="240"></svg>
+                </div>
+
+                <div class = "sum-data-ratio-wrap">
+                  <img src="static/img/data_bg_detail_triangle@2x.png" width="24" class="sum-data-ratio-box-cursor">
+                  <div class = "sum-data-ratio-box" id = "sum-data-ratio-box">
+                    <div class = "sum-data-ratio-one sum-data-ratio-wrap">
+                      <div id = "sum-data-ratio-one-value"></div>
+                      <div class = "sum-data-ratio-one-content">
+                        <div  class="option-one-text-field ellipsis-text"></div>
+                      </div>
+                    </div>
+                    <div class = "sum-data-ratio-two sum-data-ratio-wrap">
+                      <div id = "sum-data-ratio-two-value"></div>
+                      <div class = "sum-data-ratio-two-content">
+                        <div class="option-two-text-field ellipsis-text"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class = "kink-note">
+                  <p>上拉有惊喜，拉一下试试<br/>以上数据来自甭纠结APP</p>
+                </div>
+              </div>
+          </div>
+          <div id = "tab-2" class = "tab-content">
+             <div class="content-wrap">
+                <div class = "option-header">
+                  <div class = "option-one-wrap  ellipsis-text">
+                    <p><i class="fa fa-circle option-indent-icon option-one-indent-icon"></i><span class="option-one-text-field"></span></p>
+                  </div>
+
+                  <div class = "option-two-wrap ellipsis-text">
+                    <p><i class="fa fa-circle option-indent-icon option-two-indent-icon"></i><span class="option-two-text-field"></span></p>
+                  </div>
+                </div>
+
+                <dl class = "conclusion-wrap">
+                    <dt id = "conclusion-title-gender">
+                    <p><span id="conclusion-title-span">男女有别诊断结果</span><i class="fa fa-caret-down conclusion-title-icon conclusion-title-icon-animation" ></i></p>
+                    </dt>
+                    <dd id = "conclusion-detail-gender" class = "conclusion-detail-before-animation">
+                      <p id="summary-detail-gender"></p>
+                    </dd>
+                </dl>
+                
+                <!--  结果展现*/-->
+                <div class = "gender-ratio-display-wrap">
+                  <div class="man-display-block">
+                       
+                         <div class="canvas-img-div1"><canvas id="manCanvas" width="150" height="150"></canvas></div>
+                         <div class="canvas-img-div"><img class="man-img" src="./static/img/data_img_sex_man.png"/></div>
+                     
+                       <div class="man-data-display">
+                          <div class="top-triangle"><img src="./static/img/data_bg_detail_triangle@2x.png"></div>
+                          <div class="man-data-percent">
+                             <p class="data-percent-p1" id="male-option-one-percentage"></p><div class="data-percent-p option-one-text-field ellipsis-text"></div>
+                             <p class="data-percent-p2" id="male-option-two-percentage"></p><div class="data-percent-p option-two-text-field ellipsis-text"></div>
+                          </div>
+                       </div>
+               </div>
+               
+               <div class="woman-display-block">
+                 <div class="woman-cicle">
+                   <div class="canvas-img-div1">
+                    <canvas id="womanCanvas" width="150" height="150"></canvas>
+                   </div>
+                   <div class="canvas-img-div"><img class="woman-img" src="./static/img/data_img_sex_woman.png"/></div> 
+                 </div>
+                 <div class="woman-data-display">
+                   <div class="top-triangle"><img src="./static/img/data_bg_detail_triangle@2x.png">
+                   </div>
+                   <div class="woman-data-percent">
+                     <p class="data-percent-p1" id="female-option-one-percentage"></p><div class="data-percent-p option-one-text-field ellipsis-text"></div>
+                     <p class="data-percent-p2" id="female-option-two-percentage"></p><div class="data-percent-p option-two-text-field ellipsis-text"></div>
+                   </div>
+                 </div>
+               </div>
+               </div>
+               <div class = "kink-note">
+                 <p>上拉有惊喜，拉一下试试<br/>以上数据来自甭纠结APP</p>
+               </div>
+              </div>
+          </div>
+          <div id = "tab-3" class = "tab-content">
+            <div class="content-wrap">
+              <div class = "option-header">
+                <div class = "option-one-wrap ellipsis-text">
+                  <p><i class="fa fa-circle option-indent-icon option-one-indent-icon"></i><span class="option-one-text-field"></span></p>
+                </div>
+
+                <div class = "option-two-wrap ellipsis-text">
+                  <p><i class="fa fa-circle option-indent-icon option-two-indent-icon"></i><span class="option-two-text-field"></span></p>
+                </div>
+              </div>
+
+              <div class="conclusion-wrap-fa">
+                <dl class = "conclusion-wrap">
+                    <dt id = "conclusion-title-astro">
+                    <p><span id="conclusion-title-span">星座秀诊断结果</span><i class="fa fa-caret-down conclusion-title-icon conclusion-title-icon-animation"></i></p>
+                    </dt>
+                    <dd id = "conclusion-detail-astro" class = "conclusion-detail-before-animation">
+                      <p id="summary-detail-astro"></p>
+                    </dd>
+                </dl>
+              </div>
+
+              <div class = "astrobium-wrap">
+                <div id = "astro-background-1" class = "astrobium-background astrobium-background-circle-1 background-circle-animate1"></div>
+                <div id = "astro-background-2" class = "astrobium-background astrobium-background-circle-2 background-circle-animate2"></div>
+                <div id = "astro-background-3" class = "astrobium-background astrobium-background-circle-3 background-circle-animate3"></div>
+                <img id = "astro-astrolabium" src = "static/img/data_xingzuo.png" width="290" height="286" class = "astro-astrolabium-animation">
+                <canvas id="astrobium-canvas" width="320" height="320"></canvas>
+              </div>
+              <div class = "kink-note">
+                <p>上拉有惊喜，拉一下试试<br/>以上数据来自甭纠结APP</p>
+              </div>
+            </div>
+          </div>
+          <div id = "tab-4" class = "tab-content">
+             <div class="content-wrap">
+              <div class = "option-header">
+                <div class = "option-one-wrap ellipsis-text">
+                  <p><i class="fa fa-circle option-indent-icon option-one-indent-icon"></i><span class="option-one-text-field"></span></p>
+                </div>
+
+                <div class = "option-two-wrap ellipsis-text">
+                  <p><i class="fa fa-circle option-indent-icon option-two-indent-icon"></i><span class="option-two-text-field"></span></p>
+                </div>
+              </div>
+
+              <dl class = "conclusion-wrap">
+                  <dt id = "conclusion-title-years">
+                  <p><span id="conclusion-title-span">年代秀诊断结果</span><i class="fa fa-caret-down conclusion-title-icon conclusion-title-icon-animation"></i></p>
+                  </dt>
+                  <dd id = "conclusion-detail-years" class = "conclusion-detail-before-animation">
+                    <p id="summary-detail-years"></p>
+                  </dd>
+              </dl>
+              
+              <div class="percent-bar-70">
+                 <div class="percent-bar-701" style="width:auto;height:38px;">
+                    <div id="labelFor70" class="years-bubble-wrap" style="display:none;"></div>
+                 </div>
+                 <div class="percent-bar-down-702"><span>70后</span><canvas width="236" height="18" style="float:right;" id="aCanvas1"></canvas></div>
+              </div>
+              <div class="percent-bar-80">
+                 <div class="percent-bar-801" style="width:auto;height:38px;">
+                    <div id="labelFor80" class="years-bubble-wrap" style="display:none;"></div>
+                 </div>
+                 <div class="percent-bar-down-802"><span>80后</span><canvas width="236" height="18" style="float:right;" id="aCanvas2"></canvas></div>
+              </div>
+              <div class="percent-bar-90">
+                 <div class="percent-bar-901" class="years-bar-bubble" style="width:auto;height:38px;">
+                    <div id="labelFor90" class="years-bubble-wrap" style="display:none;"></div>
+                 </div>
+                 <div class="percent-bar-down-902"><span>90后</span><canvas width="236" height="18" style="float:right;" id="aCanvas3"></canvas></div>
+              </div>
+              <div class="percent-bar-00">
+                 <div class="percent-bar-001" class="years-bar-bubble" style="width:auto;height:38px;">
+                    <div id="labelFor00" class="years-bubble-wrap" style="display:none;"></div>
+                 </div>
+                 <div class="percent-bar-down-002"><span>70后</span><canvas width="236" height="18" style="float:right;" id="aCanvas4"></canvas></div>
+              </div>
+              <div class = "kink-note">
+                <p>上拉有惊喜，拉一下试试<br/>以上数据来自甭纠结APP</p>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class = "data-tabs">
+          <ul>
+            <li id = "tab-selector-1" class = "tab-selector current-tab-item">
+              <div class = "tab-indicator-wrap">
+                <div class="tab-indicator-cell">
+                  总数据
+                </div>
+              </div>
+            </li>
+            <li id = "tab-selector-2" class = "tab-selector">
+              <div class = "tab-indicator-wrap">
+                <div class="tab-indicator-cell">
+                  男女有别
+                </div>
+              </div>
+            </li>
+            <li id = "tab-selector-3" class = "tab-selector">
+              <div class = "tab-indicator-wrap">
+                <div class="tab-indicator-cell">
+                  星座分析
+                </div>
+              </div>
+            </li>
+            <li id = "tab-selector-4" class = "tab-selector">
+              <div class = "tab-indicator-wrap">
+                <div class="tab-indicator-cell">
+                  年代秀
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="page-3" style="display:none;">
+      <div id = "note-in-weixin" style="display:none;">
+        <div class= "weixin-note-wrap">
+          <div id = "weixin-note-img">
+          </div>
+        </div>
+      </div>
+      <div id = "download-panel" >
+        <div class="appDownload-img-bengjiujie">
+          <img src="./static/img/website-02_05.png"/>
+        </div>
+        <div class = "kink-introduce">
+          爱纠结？上甭纠结，不用再纠结。<br/>选择困难症终结者，纠结星人的福音。
+        </div>
+        <div class="appDownload-list-panel">
+          <ul class="appDownload-img-list">
+            
+            <li class="appDownload-img-andriod" id="appDownload-img-andriod">
+              <a>
+                <img src="./static/img/website-02_11.png"/>
+              </a>
+            </li>
+
+            <li class="appDownload-img-ios" id="appDownload-img-ios">
+              <img src="./static/img/website-02_16.png"/>
+            </li>
+          </ul>
+        </div>
+        <div class="appDownload-img-code">
+          <img src="./static/img/website-02_13.png"/>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var height = document.documentElement.clientHeight||document.body.clientHeight;
+      $("#page-1").style.height = (height-30)+"px";
+      $("#page-3").style.height = (height - 40)+"px";
+    </script>
+  </body>
+  <script type="text/javascript" src = "static/js/post.js" charset="utf-8"></script>
+</html>

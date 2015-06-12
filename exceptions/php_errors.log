@@ -69,3 +69,17 @@
 [11-Jun-2015 16:38:09 Asia/Shanghai] PHP Notice:  Use of undefined constant customError - assumed 'customError' in D:\chinaiiss\code\exceptions\set_error_handler.php on line 10
 [11-Jun-2015 16:38:09 Asia/Shanghai] PHP Notice:  Undefined variable: king in D:\chinaiiss\code\exceptions\set_error_handler.php on line 20
 [11-Jun-2015 16:38:09 Asia/Shanghai] PHP Notice:  Undefined variable: imooc in D:\chinaiiss\code\exceptions\set_error_handler.php on line 23
+[12-Jun-2015 17:11:52 Asia/Shanghai] PHP Fatal error:  Call to undefined function md6() in D:\chinaiiss\code\exceptions\shutdown.php on line 14
+[12-Jun-2015 17:12:03 Asia/Shanghai] PHP Fatal error:  Call to undefined function md6() in D:\chinaiiss\code\exceptions\shutdown.php on line 14
+[12-Jun-2015 17:46:46 Asia/Shanghai] PHP Warning:  Division by zero in D:\chinaiiss\code\exceptions\testException.php on line 11
+[12-Jun-2015 17:48:54 Asia/Shanghai] PHP Warning:  Division by zero in D:\chinaiiss\code\exceptions\testException.php on line 12
+[12-Jun-2015 17:49:26 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_VARIABLE in D:\chinaiiss\code\exceptions\testException.php on line 11
+[12-Jun-2015 18:03:18 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_ELSE, expecting T_CATCH in D:\chinaiiss\code\exceptions\testException.php on line 42
+[12-Jun-2015 18:03:39 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_ELSE, expecting T_CATCH in D:\chinaiiss\code\exceptions\testException.php on line 42
+[12-Jun-2015 18:05:08 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_ELSE, expecting T_CATCH in D:\chinaiiss\code\exceptions\testException.php on line 42
+[12-Jun-2015 18:05:31 Asia/Shanghai] PHP Warning:  Division by zero in D:\chinaiiss\code\exceptions\testException.php on line 13
+[12-Jun-2015 18:26:46 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message '测试异常1' in D:\chinaiiss\code\exceptions\pdoException.php:28
+Stack trace:
+#0 {main}
+  thrown in D:\chinaiiss\code\exceptions\pdoException.php on line 28
+[12-Jun-2015 18:28:12 Asia/Shanghai] PHP Parse error:  syntax error, unexpected '>' in D:\chinaiiss\code\exceptions\pdoException.php on line 34
