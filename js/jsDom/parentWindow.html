@@ -1,0 +1,27 @@
+<html>
+<head>
+<title></title>
+<meta charset="utf8">
+<script type="text/javascript">
+  var newWindow;
+  function test2(){
+  	//newWindow其实就是指向新窗口的引用
+  	newWindow=window.open("childWindow.html","_blank");
+  }
+  function test3(){
+  	newWindow.document.getElementById("myspan2").innerText=$("info2").value;
+  }
+  function $(id){
+  	return document.getElementById(id);
+  }
+</script>
+</head>
+<body>
+	我是父窗口
+	<input type="button" value="打开新窗口" onclick="test2()"/>
+	<input type="text" value="" id="info2"/>
+	<input type="button" value="发送给子窗口" onclick="test3()"/><br/><br/>
+	<span>接收的信息是：</span>
+	<span id="myspan">信息</span>
+</body>
+</html>

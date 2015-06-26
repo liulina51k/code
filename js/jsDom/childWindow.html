@@ -1,0 +1,25 @@
+<html>
+<head>
+<title></title>
+<meta charset="utf8">
+<script language="javascript" type="text/javascript">
+  function test2(){
+  	var msg=window.document.getElementById("info").value;
+  	opener.document.getElementById("myspan").innerText=msg;
+  }
+  function test3(){
+  	newWindow.document.getElementById("info2").value=$("info").value;
+  }
+  function $(id){
+  	return document.getElementById(id);
+  }
+</script>
+</head>
+<body>
+我是新窗口
+<input type="text" value="" id="info"/>
+<input type="button" value="发送给父窗口" onclick="test2()"/><br/><br/>
+<span>接收的信息是：</span>
+<span id="myspan2">信息</span>
+</body>
+</html>
