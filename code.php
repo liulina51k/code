@@ -973,3 +973,28 @@ function commit2() {
 }
 {/literal}
 </script>
+//26***************登陆时添加验证码验证****************
+//记录登陆点击次数，点击两次都不正确，之后出现验证码
+$_COOKIE['count'] = isset($_COOKIE['count']) ? $_COOKIE['count'] : '';
+if($_COOKIE['count']) {
+	if($_COOKIE['count'] > 1){
+		$verifycodehtml = template('login.verifycode.html', 1);		
+	}else{
+		setcookie('count',$_COOKIE['count']+1);
+	}
+}else{
+	setcookie('count',1);
+}
+//验证码提交之后对验证码的处理
+if($_COOKIE['count'] > 1) {
+	session_start();
+	$verifycode = isset($paramarr[2]) ? urldecode($paramarr[2]) : '';
+	$_SESSION['verify'] = isset($_SESSION['verify']) ? $_SESSION['verify'] : '';
+	if(strtolower($verifycode) == strtolower($_SESSION['verify'])) {
+		self::blog_login($ouser->checkUser(urldecode($paramarr[0]), $paramarr[1]));
+	}else {
+		self::blog_login();
+	}
+}else{
+	self::blog_login($ouser->checkUser(urldecode($paramarr[0]), $paramarr[1]));
+}
