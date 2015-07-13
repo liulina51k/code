@@ -1,0 +1,74 @@
+<script src="Sortable.js"></script>
+<style>
+li {
+	float: left;
+}
+</style>
+<ul id="items">
+    <li><img width="300" src="../pic/1.jpg"></li>
+    <li><img width="300" src="../pic/2.jpg"></li>
+    <li><img width="300" src="../pic/3.jpg"></li>
+    <li><img width="300" src="../pic/24.jpg"></li>
+    <li><img width="300" src="../pic/10.jpg"></li>
+    <li><img width="300" src="../pic/14.jpg"></li>
+    <li><img width="300" src="../pic/17.jpg"></li>
+    <li><img width="300" src="../pic/18.jpg"></li>
+    <li><img width="300" src="../pic/20.jpg"></li>
+    <li><img width="300" src="../pic/23.jpg"></li>
+    <li><img width="300" src="../pic/m.jpg"></li>
+    <li><img width="300" src="../pic/e.jpg"></li>
+</ul>
+<script type="text/javascript">
+var el = document.getElementById('items');
+new Sortable(el);
+new Sortable(el, {
+    group: "name",
+    store: null, // @see Store
+    handle: ".my-handle", // 点击目标元素约束开始
+    draggable: ".item",   // 指定那些选项需要排序
+    ghostClass: "sortable-ghost",
+ 
+    onStart: function (/**Event*/evt) { // 拖拽
+        var itemEl = evt.item;
+    },
+ 
+    onEnd: function (/**Event*/evt) { // 拖拽
+        var itemEl = evt.item;
+    },
+ 
+    onAdd: function (/**Event*/evt){
+        var itemEl = evt.item;
+    },
+ 
+    onUpdate: function (/**Event*/evt){
+        var itemEl = evt.item; // 当前拖拽的html元素
+    },
+ 
+    onRemove: function (/**Event*/evt){
+        var itemEl = evt.item;
+    }
+});
+new Sortable(el, {
+    group: "name",
+    store: {
+        /**
+         * Get the order of elements. Called once during initialization.
+         * @param   {Sortable}  sortable
+         * @retruns {Array}
+         */
+        get: function (sortable) {
+            var order = localStorage.getItem(sortable.options.group);
+            return order ? order.split('|') : [];
+        },
+ 
+        /**
+         * Save the order of elements. Called every time at the drag end.
+         * @param {Sortable}  sortable
+         */
+        set: function (sortable) {
+            var order = sortable.toArray();
+            localStorage.setItem(sortable.options.group, order.join('|'));
+        }
+    }
+})
+</script>
